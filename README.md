@@ -1,4 +1,4 @@
 # Test_Git 
 First 
-Second \n
+Second 
 Добавили описание
