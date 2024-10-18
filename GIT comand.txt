@@ -1,0 +1,73 @@
+1)Для работы Создание репозитория в существующем каталоге
+->cd C:/Users/user/my_GITproject
+
+2)а затем выполните команду:
+->git init
+Эта команда создаёт в текущем каталоге новый подкаталог с именем .git(скрытый)
+
+3)->git -v
+Покажет версию Git => git version 2.46.2.windows.1
+
+4)Настройте для Git имя пользователя и адрес электронной почты 
+с помощью следующих команд
+->git config --global user.name "ИМЯ"
+->git config --global user.email "ПОЧТА@atlassian.com"
+
+5)Команда git status отображает состояние рабочего каталога 
+и раздела проиндексированных файлов
+->git status
+
+6)Создали файл index.html, 
+Добавление нового файла
+->git add index.html
+
+->git add .
+
+7)создание commit -m с именем комита после добавления
+->git commit -m "first commit index.html"
+
+ =>	Если вы хотите переделать коммит — внесите необходимые изменения,
+ добавьте их в индекс и сделайте коммит ещё раз, указав параметр --amend:
+->git commit --amend
+----------------------------------
+ПРИМЕР:				--
+git commit -m 'Initial commit'	--
+git add forgotten_file		--
+git commit --amend		--
+----------------------------------
+
+8) Если изменить документ, то необходимо опять добавить и закомитить изменения
+->git add .
+->git commit -m "Chenge index.html"
+
+9)Просмотр истории коммитов
+->git log
+или более нагляднее
+->	git log --graph --oneline --decorate --all
+
+можно использовать псевдоним, для простого вызова
+	=>  git config --global alias.hist "log --graph --oneline --decorate --all"
+и теперь просто писать
+->git hist
+
+10)
+->git branch
+
+11)Добавление тега "oops" для коммита, видно в истории(пометили)
+-> git tag oops
+
+12) Переход по коммитам,
+->git reset num -> num номер коммита
+
+13) Удалили тега "oops"
+->git tag -d oops
+->git log --all
+
+
+->
+->
+->
+->
+->
+->
+->
